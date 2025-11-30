@@ -1,612 +1,218 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UIDD: Digitally Integrated Economy</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEKTDBXD07"></script>
-<script>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BITC — A Revolution for Equality, Inclusivity & Diversity</title>
+  <meta name="description" content="BITC is a revolutionary cryptocurrency project promoting equality, inclusivity, and diversity. Download clients and explore resources." />
+  <meta name="keywords" content="BITC, cryptocurrency, equality, inclusivity, diversity, blockchain, Bitcoin, open source, crypto wallet, decentralized" />
+  <meta name="author" content="BITC Team" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="theme-color" content="#004d40" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BITC Project" />
+  <meta property="og:url" content="https://bitc.example.com/" />
+  <meta property="og:title" content="BITC — A Revolution for Equality, Inclusivity & Diversity" />
+  <meta property="og:description" content="Join the BITC movement to promote equality, inclusivity, and diversity through decentralized cryptocurrency." />
+  <meta property="og:image" content="https://bitc.example.com/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://bitc.example.com/" />
+  <meta name="twitter:title" content="BITC — A Revolution for Equality, Inclusivity & Diversity" />
+  <meta name="twitter:description" content="Join the BITC movement to promote equality, inclusivity, and diversity through decentralized cryptocurrency." />
+  <meta name="twitter:site" content="@BITCOfficial" />
+  <meta name="twitter:image" content="https://bitc.example.com/assets/twitter-card.jpg" />
+  <meta name="twitter:creator" content="@BITCOfficial" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bitc.example.com/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Font Awesome for Icons -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEKTDBXD07"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-QEKTDBXD07');
-</script>
+  </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BITC Project",
+    "url": "https://uidd.org/",
+    "logo": "https://bitc.example.com/bitcoin-logo.png",
+    "description": "A revolutionary cryptocurrency project promoting equality, inclusivity, and diversity.",
+    "sameAs": [
+      "https://twitter.com/BITCOfficial",
+      "https://www.facebook.com/BITCOfficial",
+      "https://github.com/BITCProject",
+      "https://t.me/BITCChannel"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "BITC Wallet",
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "FinanceApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Official desktop wallet for BITC cryptocurrency. Available for Windows, Mac, and Linux.",
+    "url": "https://uidd.org/#download"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BITC Project",
+    "url": "https://uidd.org/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://uidd.org/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --hacker-green: #00b300;
+      --background-dark: #FFFFFF;
+      --card-dark: #FFFFFF;
+      --text-green-dim: #006400; /* Darker green for readability on white */
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace; /* Classic hacker font */
+      background-color: var(--background-dark);
+      color: var(--text-green-dim);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .bg-accent, .card {
+      background-color: var(--card-dark);
+      border: 1px solid var(--hacker-green);
+    }
+    
+    .header-footer-style {
+      border-left: 0;
+      border-right: 0;
+      border-top: 0; /* For header */
+    }
+
+    .text-primary-color {
+      color: var(--hacker-green);
+    }
+
+    .logo-img {
+      max-width: 312px;
+      width: 30vw; /* Adjust based on viewport width */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .link-button {
+      text-decoration: none;
+      color: var(--hacker-green);
+      font-weight: 500;
+      border: 1px solid var(--hacker-green);
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      display: inline-block;
+    }
+
+    .link-button:hover {
+      color: #ccffcc; /* Lighter green for hover */
+      background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    .link-button i {
+      width: 25px; /* Align icons */
+    }
+
+    main {
+      flex-grow: 1; /* Pushes footer down */
+    }
+  </style>
 </head>
 <body>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 1 - THE NAVBAR SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////-->
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="">
-        <img src="images/logo.png" alt="logo image">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
-          <li class="nav-item"><a class="nav-link" href="#download">Downloads</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
-          <li class="nav-item"><a class="nav-link" href="#timeline">Roadmap</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://scan.uidd.org">Explorer</a></li>
-          
-          </li>
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
+  <header class="bg-accent p-5 text-center header-footer-style">
+    <h1 class="display-4 text-primary-color">UIDD</h1>
+    <p class="lead"><strong>A Revolution to bring Equality, Inclusivity with Diversity</strong></p>
+  </header>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                            START SECTION 2 - THE INTRO SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<section id="home" class="intro-section">
-  <div class="container">
-    <div class="row align-items-center text-white">
-      <!-- START THE CONTENT FOR THE INTRO  -->
-      <div class="col-md-6 intros text-start">
-        <h1 class="display-2">
-          <span class="display-2--intro">Digitally Integrated Economy</span>
-          <span class="display-2--description lh-base">
-						Our goal is to use blockchain technology to build an ecosystem that encourages trade and financial inclusion in a sustainable way.
-          </span>
-        </h1>
-        <a href="#about"><button type="button" class="rounded-pill btn-rounded">More
-          <span><i class="fas fa-arrow-right"></i></span>
-        </button></a>
-      </div>
-      <!-- START THE CONTENT FOR THE VIDEO -->
-      <div class="col-md-6 intros text-end">
-        <div class="video-box">
-          <img src="images/arts/intro-section-illustration.png" class="img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#001100" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////
-                         START SECTION 4 - about  
-///////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="about" class="services">
-  <div class="spacer"></div>
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3">Decentralized Ecosystem&nbsp;<br></br>
-     </h1>
-      <div class="heading-line mb-1"></div>
-    </div>
-  <!-- START THE DESCRIPTION CONTENT  -- >
-    <div class="row pt-2 pb-2 mt-0 mb-3">
-      <div class="col-md-6 border-right">
-        <div class="bg-white p-4 text-start">
-          <p class="fw-light">
-            
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="bg-white p-3">
-          <h2 class="fw-bold text-capitalize text-center">
-            Decentralized Ecosystem
-          </h2>
-        </div>
-        
-      </div>
-    </div>
-  </div>-->
-
-  <!-- START THE CONTENT FOR THE SERVICES  -->
-  <div class="container">
-    <!-- START THE MARKETING CONTENT  -->
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-        <div class="services__content">
-          <div class="icon d-block fas fa-globe"></div>
-          <h3 class="display-3--title">Future is Digital</h3>
-          <p class="lh-lg">
-            A decentralized, open-source, community-driven, and inclusion-focused cryptocurrency called UIDD is designed to boost global trade and business in order to assist and support the underprivileged community and work to better living conditions.
-          </p>
-          <a href="https://drive.google.com/file/d/1M0kWW4KdDL6SwtBGcQmLNUPVxK67zUXu/view?usp=share_link"><button type="button" class="rounded-pill btn-rounded border-primary">Lightpaper
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button></a>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 text-end">
-        <div class="services__pic">
-          <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#010" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-</section>
-
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 5 - vision  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="vision" class="testimonials">
-  
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 text-capitalize">UIDD Blockchain</h1>
-      <div class="heading-line"></div>
-      <p class="lh-lg">
-        Be a part of the Ecosystem that aims to reduce poverty and emplyment
-      </p>
-    </div>
-
-    <!-- START THE CTA CONTENT  -->
-    <div class="row text-white">
-      <div class="col-12 col-lg-6 shadow p-3">
-        <div class="cta-info w-100">
-          <h4 class="display-4">Mission</h4>
-          <p class="lh-lg">
-            UIDD seeks to assist those who are less fortunate than others so they can have dignified lives. This can only be accomplished by creating opportunities and by facilitating access to the global market through the creation of an ecosystem.</p>
-            <p class="lh-lg">
-            We will build a network to integrate all blockchain services, such as smart contracts, which are necessary for ecosystems that support commerce and business, onto a single platform. 
-          </p>
-          
-        </div>
-      </div>
-      
-    </div><br>
-    <div class="row text-white">
-      <div class="col-12 col-lg-6 p-3">
-        </div>
-      <div class="col-12 col-lg-6 shadow p-3">
-        <div class="cta-info w-100">
-          <h4 class="display-4">Business On Crypto</h4>
-          <p class="lh-lg">
-            UIDD aims to develop an ecosystem that support and empower underpriviledge community and create a business Oriented platform that can serve all the need.
-            UIDD aims to cater 
-          </p>
-          <h3 class="display-3--brief">What will be the next step?</h3>
-          <ul class="cta-info__list">
-            <li>banking solutions</li>
-            <li>borderless</li>
-            <li>low cost transactions</li>
-            <li>Security</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  
-    
-  </div><br>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#010" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION  - downloads  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="download" class="tecnicals">
-  
-  <div class="container">
-    <div class="row text-center text-white">
-      <h1 class="display-3">Downloads</h1>
-      <hr style="width: 100px; height: 3px; " class="mx-auto">
-      <p class="lead pt-1"></p>
-    </div>
-
-    <!-- START THE CAROUSEL CONTENT  -->
-    <div class="row">
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-linux"></i>
-              </div>
-              <div class="service-text">
-                  <h3>Linux</h3>
-                  <p>
-                      <a class="btn1" href="https://github.com/UIDD/UIDD/releases/download/v1.1.0/uidd-1.1.0-x86_64-linux-gnu.tar.gz">Download</a>
-                  </p> 
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-windows"></i>
-              </div>
-              <div class="service-text">
-                  <h3>Windows 64Bit</h3>
-                  <p>
-                      <a class="btn1" href="https://github.com/UIDD/UIDD/releases/download/v1.1.0/uidd-1.1.0-win64-setup-unsigned.exe">Download</a>                                </p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-linux"></i>
-              </div>
-              <div class="service-text">
-                  <h3>Linux Arm 64Bit</h3>
-                  <p>
-                      <a class="btn1" href="https://github.com/UIDD/UIDD/releases/download/v1.1.0/uidd-1.1.0-arm-linux-gnueabihf.tar.gz">Download</a>                                </p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-apple"></i>
-              </div>
-              <div class="service-text">
-                  <h3>Mac</h3>
-                  <p>
-                      <a class="btn1" href="https://github.com/UIDD/UIDD/releases/download/v1.1.0/uidd-1.1.0-osx64.tar.gz">Download</a>                                </p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-app-store-ios"></i>
-              </div>
-              <div class="service-text">
-                  <h3>Ios</h3>
-                  <p>
-                      <a class="btn1" href="javascript:void(0)">Download</a>                                </p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-          <div class="service-item">
-              <div class="service-icon">
-                  <i class="fab fa-internet-explorer"></i>
-              </div>
-              <div class="service-text">
-                  <h3>website</h3>
-                  <p>
-                      <a class="btn1" href="javascript:void(0)">Download</a>                                </p>
-              </div>
-          </div>
-      </div>
+  <div class="text-center my-4">
+    <img src="uidd-t.png" alt="UIDD Project Logo" class="logo-img" />
   </div>
 
-  </div>
-  </div>
-  <div>
-    
-  </div>
-</section>
-
-
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                       START SECTION 6 - THE FAQ 
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="faq" class="faq">
-  <div class="spacer"></div>
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 text-uppercase">faq</h1>
-      <div class="heading-line"></div>
-      <p class="lead">frequently asked questions, get knowledge befere hand</p>
-    </div>
-    <!-- ACCORDION CONTENT  -->
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div class="accordion" id="accordionExample">
-          <!-- ACCORDION ITEM 1 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is UIDD
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Uidd is a community-focused cryptocurrency that focuses on facilitating trade and commercial transactions and building a solid ecosystem.
-              </div>
+  <main class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-7 col-md-10">
+        <div class="card">
+          <div class="card-body text-center">
+            <h2 class="card-title text-primary-color"><b>Resources</b></h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="#" class="link-button" rel="noopener noreferrer"><i class="fas fa-file-alt fa-fw me-2"></i>Whitepaper</a>
+              <a href="https://github.com/UIDD" class="link-button" rel="noopener noreferrer"><i class="fab fa-github fa-fw me-2"></i>GitHub</a>
+              <a href="https://twitter.com/uiddorg" class="link-button" rel="noopener noreferrer"><i class="fab fa-twitter fa-fw me-2"></i>Twitter</a>
+              <a href="https://www.facebook.com/uiddOfficial" class="link-button" rel="noopener noreferrer"><i class="fab fa-facebook fa-fw me-2"></i>Facebook</a>
+              <a href="https://t.me/uiddorg" class="link-button" rel="noopener noreferrer"><i class="fab fa-telegram fa-fw me-2"></i>Telegram</a>
             </div>
           </div>
-             <!-- ACCORDION ITEM 2 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Is UIDD decentralized?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Yes, our core objective is to make software as decentralized as possible. As long as UIDD is open source, it will have a completely transparent development ecosystem and anyone can contribute to development while having a fixed coin supply. We believe this is the age of decentralisation and collective no one should govern or dictate the others' voice. Decentralization can build a powerfull ecosystem in which we would have collective growth and no one can be left behind.
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 3 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Is UIDD inflationary ?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                yes, UIDD is inflationary and current inflation rate is ~.2% 
-
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 4 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                How can i Support the UIDD?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                you are welcome to contribute to the uidd <br> <i>or</i><br> 
-                by contributing to in development of codebase and adding/proposing improvement and development<br> <i>or</i><br> 
-                by supporting and promoting uidd in your social groups and encourarage them towards uidd .
-              </div>
-            </div>
-          </div>
-           <!-- ACCORDION ITEM 5 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
-                Where can I buy UIDD right now?
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                UIDD is not currently listed on any exchange, but it will be soon.
-              </div>
-            </div>
-          </div>
-           <!-- ACCORDION ITEM 6 -->
-           <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFour">
-                how the project is being funded?
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                5% of initial supply has been allocated as an development and this fund will ensure the development. 
-              </div>
-            </div>
-          </div>
-          <!-- ACCORDION ITEM 7 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingSeven">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Why coin not token?
-              </button>
-            </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                ICO-like soft launch, which took place in "In this extremely volatile period of blockchain development, it is crucial to reach a wider consensus in order to better serve the community and implement speedy functionality.
-                incessantly evolving technological era "As we all know, adaptability is king, thus it is best to involve a larger community in development to ensure that we produce the finest possible blockchain technology to meet all of these needs. 
-              </div>
-            </div>
-          </div>
-           <!-- ACCORDION ITEM 8 -->
-           <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="heading8">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapseFour">
-                Where can I contact in case of any Query?
-              </button>
-            </h2>
-            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Anyone is invited to contact us via Telegram, Twitter, or any of the other social media networks featured on the website.
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
-  </div>
-  
-</section>
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////
-                             START SECTION 3 - THE social SECTION  
-////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<section id="community" class="campanies">
-  <br>
-  <div class="spacer"></div>
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 text-capitalize">Social</h1>
-      <div class="heading-line mb-5"></div>
-    </div>
-  </div>
-  <!-- START THE CAMPANIES CONTENT  -->
-  <div class="container">
-    <div class="row">
-      
-                    
-        <div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="http://twitter.com/uiddorg" style="font-size:60px;"><i class="fab fa-twitter"></i></a>
-        </div><div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="https://www.facebook.com/uiddofficial" style="font-size:60px;"><i class="fab fa-facebook-f"></i></a>
-    </div> <div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="https://t.me/uiddorg" style="font-size:60px;"><i class="fab fa-telegram"></i></a>
-</div> <div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="https://discord.gg/4ve4hcf5GZ" style="font-size:60px;"><i class="fab fa-discord"></i></a>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="https://www.reddit.com/r/uidd" style="font-size:60px;"><i class="fab fa-reddit"></i></a>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 team-social" style="padding: 10px; text-align: center;"><a class="btn" href="https://github.com/UIDD" style="font-size:60px;"><i class="fab fa-github"></i></a>
-</div>
-</div>
-     
-    
-  </div>
-</section>
-
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-              START SECTION 8 - GET STARTED  
-/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-
-
-
-<section id="timeline">
-  
-  <div class="experience" id="timeline">
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="display-3 text-capitalize">Roadmap</h1>
-        <div class="heading-line"></div>
-        <p class="lh-lg">
-          
-        </p>
-      </div>  
-     
-        <div class="timeline">
-            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                <div class="timeline-text">
-                    <div class="timeline-date">Q1-2023</div>
-                    <h2>Jan-Mar</h2>
-                    <h4>Website Launch</h4>
-                    <h4>Vision document</h4>
-                    <h4>Soft-chain launch</h4>
-                    <h4>Blog</h4>
-                    <p>
-                    </p>
-                </div>
+      <div id="download" class="col-lg-7 col-md-10">
+        <div class="card">
+          <div class="card-body text-center">
+            <h2 class="card-title text-primary-color"><b>Downloads</b></h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="https://github.com/UIDD/UIDD/releases/tag/v2.0.1a" class="link-button"><i class="fas fa-desktop fa-fw me-2"></i>Win64</a>
+              <a href="https://github.com/UIDD/UIDD/releases/tag/v2.0.1a" class="link-button"><i class="fab fa-apple fa-fw me-2"></i>Mac</a>
+              <a href="https://github.com/UIDD/UIDD/releases/tag/v2.0.1a" class="link-button"><i class="fab fa-linux fa-fw me-2"></i>Linux64</a>
+              <a href="https://github.com/UIDD/UIDD/releases/tag/v2.0.1a" class="link-button"><i class="fas fa-microchip fa-fw me-2"></i>Arm-linux</a>
+              <a href="https://github.com/UIDD/UIDD/releases/tag/v2.0.1a" class="link-button"><i class="fas fa-server fa-fw me-2"></i>Arch64</a>
             </div>
-            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                <div class="timeline-text">
-                    <div class="timeline-date">Q2,2023</div>
-                    <h2>Apr-Jun</h2>
-                    <h4>Take Off</h4>
-                    <h4>Team building & expansion</h4>
-                    <h4>Mainnet Network launch </h4>
-                    <h4>Community development </h4>
-                    <h4>Telegram bot launch</h4>
-                    <h4>Whitepaper drafting </h4>
-                    <h4>Development program launch</h4>
-
-                </div>
-            </div>
-            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                <div class="timeline-text">
-                    <div class="timeline-date">Q3,2023</div>
-                    <h2>Jul-Sep</h2>
-                    <h4>Community & team expansion</h4>
-                      <h4>Decentralised ecosystem development</h4>
-                      <h4> Website relaunchv</h4>
-                      <h4>UI/UX redesign </h4>
-                      <h4>Upgrade to Evmone </h4>
-                      <h4>Technical documents</h4>
-                      <h4>Validator pools </h4>
-                      <h4>Exchange Listing </h4>
-                      <h4>Business support program</h4>
-                      
-                </div>
-            </div>
-            
-            
-            
-            
-            
-        </div>
-    </div>
-</div>
-<!-- Job Experience End -->
-</section>
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////
-                           START SECTION 9 - THE FOOTER  
-///////////////////////////////////////////////////////////////////////////////////////////////-->
-<footer class="footer">
-  <div id="inner-wrap"><!---<svg class="waves" xmlns="http://www.w3.org/2000/svg" width="100%" height="321.75" viewBox="0 0 960 214.5" preserveAspectRatio="xMinYMid meet"><defs><style>.waves>path{-webkit-animation:a 17390ms ease-in-out infinite alternate-reverse both;-moz-animation:a 17390ms ease-in-out infinite alternate-reverse both;-ms-animation:a 17390ms ease-in-out infinite alternate-reverse both;-o-animation:a 17390ms ease-in-out infinite alternate-reverse both;animation:a 17390ms ease-in-out infinite alternate-reverse both;-webkit-animation-timing-function:cubic-bezier(.25,0,.75,1);-moz-animation-timing-function:cubic-bezier(.25,0,.75,1);-ms-animation-timing-function:cubic-bezier(.25,0,.75,1);-o-animation-timing-function:cubic-bezier(.25,0,.75,1);animation-timing-function:cubic-bezier(.25,0,.75,1);-webkit-will-change:transform;-moz-will-change:transform;-ms-will-change:transform;-o-will-change:transform;will-change:transform}.waves>path:nth-of-type(1){-webkit-animation-duration:20580ms;-moz-animation-duration:20580ms;-ms-animation-duration:20580ms;-o-animation-duration:20580ms;animation-duration:20580ms}.waves>path:nth-of-type(2){-webkit-animation-delay:-2690ms;-moz-animation-delay:-2690ms;-ms-animation-delay:-2690ms;-o-animation-delay:-2690ms;animation-delay:-2690ms;-webkit-animation-duration:13580ms;-moz-animation-duration:13580ms;-ms-animation-duration:13580ms;-o-animation-duration:13580ms;animation-duration:13580ms}g>path:nth-of-type(1){-webkit-animation-delay:-820ms;-moz-animation-delay:-820ms;-ms-animation-delay:-820ms;-o-animation-delay:-820ms;animation-delay:-820ms;-webkit-animation-duration:10730ms;-moz-animation-duration:10730ms;-ms-animation-duration:10730ms;-o-animation-duration:10730ms;animation-duration:10730ms}.waves>path:nth-of-type(1),g>path:nth-of-type(2){-webkit-animation-direction:alternate;-moz-animation-direction:alternate;-ms-animation-direction:alternate;-o-animation-direction:alternate;animation-direction:alternate}@-webkit-keyframes a{0%{-webkit-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);transform:translateX(-20px)}}@-moz-keyframes a{0%{-moz-transform:translateX(-750px);transform:translateX(-750px)}100%{-moz-transform:translateX(-20px);transform:translateX(-20px)}}@-ms-keyframes a{0%{-ms-transform:translateX(-750px);transform:translateX(-750px)}100%{-ms-transform:translateX(-20px);transform:translateX(-20px)}}@-o-keyframes a{0%{-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-o-transform:translateX(-20px);transform:translateX(-20px)}}@keyframes a{0%{-webkit-transform:translateX(-750px);-moz-transform:translateX(-750px);-ms-transform:translateX(-750px);-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);-ms-transform:translateX(-20px);-o-transform:translateX(-20px);transform:translateX(-20px)}}</style><linearGradient id="a"><stop stop-color="#00502b"/><stop offset="0.2" stop-color="#088F54"/><stop offset="0.4" stop-color="#0C7240"/><stop offset="0.6" stop-color="#07A562"/></linearGradient><linearGradient id="b"><stop stop-color="#335533"/><stop offset="0.2" stop-color="#001100"/><stop offset="0.4" stop-color="#335533"/><stop offset="0.6" stop-color="#335533"/></linearGradient></defs><path fill="url(#a)" d="M2662.6 1S2532 41.2 2435 40.2c-19.6-.2-37.3-1.3-53.5-2.8 0 0-421.3-59.4-541-28.6-119.8 30.6-206.2 75.7-391 73.3-198.8-2-225.3-15-370.2-50-145-35-218 37-373.3 36-19.6 0-37.5-1-53.7-3 0 0-282.7-36-373.4-38C139 26 75 46-1 46v106c17-1.4 20-2.3 37.6-1.2 130.6 8.4 210 56.3 287 62.4 77 6 262-25 329.3-23.6 67 1.4 107 22.6 193 23.4 155 1.5 249-71 380-62.5 130 8.5 209 56.3 287 62.5 77 6 126-18 188-18 61.4 0 247-38 307.4-46 159.3-20 281.2 29 348.4 30 67 2 132.2 6 217.4 7 39.3 0 87-11 87-11V1z"/><path fill="url(#b)" d="M2663.6 73.2S2577 92 2529 89c-130.7-8.5-209.5-56.3-286.7-62.4s-125.7 18-188.3 18c-5 0-10-.4-14.5-.7-52-5-149.2-43-220.7-39-31.7 2-64 14-96.4 30-160.4 80-230.2-5.6-340.4-18-110-12-146.6 20-274 36S820.4 0 605.8 0C450.8 0 356 71 225.2 62.2 128 56 60.7 28-.3 11.2V104c22 7.3 46 14.2 70.4 16.7 110 12.3 147-19.3 275-35.5s350 39.8 369 43c27 4.3 59 8 94 10 13 .5 26 1 39 1 156 2 250-70.3 381-62 130.5 8.2 209.5 56.3 286.7 62 77 6.4 125.8-18 188.3-17.5 5 0 10 .2 14.3.6 52 5 145 49.5 220.7 38.2 32-5 64-15 96.6-31 160.5-79.4 230.3 6 340 18.4 110 12 146.3-20 273.7-36l15.5-2V73l1-.5z"/></svg>--></div>
-  <div class="container">
-    <div class="row">
-      <!-- CONTENT FOR THE MOBILE NUMBER  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        
-        
-      </div>  
-      <!-- CONTENT FOR EMAIL  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        
-        
-      </div>
-      <!-- CONTENT FOR LOCATION  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-       
-      </div>
-    </div>
-  </div>
-
-  <!-- START THE SOCIAL MEDIA CONTENT  -->
-  <div class="footer-sm" style="background-color: #212121;">
-    <div class="container">
-      <div class="row py-4 text-center text-white">
-        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-          connect with us on social media
-        </div>
-        <div class="col-lg-7 col-md-6">
-          <a href="https://www.facebook.com/uiddorg"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/UIDDorg"><i class="fab fa-twitter"></i></a>
-          <a href="https://github.com/UIDD/UIDD"><i class="fab fa-github"></i></a>
-          <a href="https://reddit.com/r/uidd"><i class="fab fa-reddit"></i></a>
-          <a href="https://www.instagram.com/uiddorg"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
-  <div class="container mt-5">
-    <div class="row text-white justify-content-center mt-3 pb-3">
-      <div class="col-12 col-sm-12 col-lg-12 mx-auto">
-        
-        <p class="lh-lg">
-          cryptocurrency are highly speculative unregulated financial product and involves substancial degree of risk. cryptocurrencies are subject to frequent fluctuation in value and we do not offer advise or recommend that "owning cryptocurrencies is risk-free or low-risk investments" 
-        </p>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- START THE COPYRIGHT INFO  -->
-  <div class="footer-bottom pt-5 pb-5">
-    <div class="container">
-      <div class="row text-center text-white">
-        <div class="col-12">
-          <div class="footer-bottom__copyright">
-            &COPY; Copyright 2022 <a href="#">uidd.org</a> | All trademarks are the property of their respective owners
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </main>
 
-<!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
-</a>
+  <footer class="bg-accent text-center py-3 mt-5" style="border-left: 0; border-right: 0; border-bottom: 0; border-top: 1px solid var(--hacker-green);">
+    &copy; 2025 UIDD Project. All rights reserved.
+  </footer>
 
-
-
-   
-    <script src="assets/vendors/js/glightbox.min.js"></script>
-
-    
-     <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
